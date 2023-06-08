@@ -1,0 +1,54 @@
+<mat-toolbar>
+
+    <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+    <mat-icon *ngIf="sidenav.opened">
+        close
+    </mat-icon>
+    <mat-icon *ngIf="!sidenav.opened">
+        menu
+    </mat-icon>
+</button>
+    Responsive sidebar navigation
+</mat-toolbar>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav" >
+        Hello
+
+        <img class="avatar mat-elevation-z8" src="https://source.unsplash.com">
+        <h4 class="name">JohnSmith</h4>
+        <p class="designation">SoftwareEngineer</p>
+        <mat-divider>
+             
+        </mat-divider>
+
+        <button  mat-button class="menu-button">
+            <mat-icon>home</mat-icon>
+            <span class="textcolor">Home</span>
+        </button>
+        <button  mat-button class="menu-button">
+            <mat-icon>person</mat-icon>
+            <span class="textcolor">Profile</span>
+        </button>
+        <button  mat-button class="menu-button">
+            <mat-icon>info</mat-icon>
+            <span class="textcolor">About</span>
+        </button> <button  mat-button class="menu-button">
+            <mat-icon>help</mat-icon>
+            <span class="textcolor">Help</span>
+        </button>
+    </mat-sidenav>
+
+
+    <mat-sidenav-content>
+        <div class="content mat- elevation-z4">
+            Main content
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+  
+
+
+
+
+
